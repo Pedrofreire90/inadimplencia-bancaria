@@ -1,0 +1,12 @@
+git clone https://github.com/Pedrofreire90/inadimplencia-bancaria.git
+cd inadimplencia-bancaria
+
+# remover do controle de versão (mas manter localmente)
+git rm -r --cached venv __pycache__
+
+# adicionar o .gitignore (copie o conteúdo do arquivo gitignore_inadimplencia.txt)
+# cole no arquivo .gitignore na raiz do projeto
+
+git add .gitignore
+git commit -m "Remove venv e __pycache__ do versionamento, adiciona .gitignore"
+git push
